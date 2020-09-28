@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Home from "./components/Home.js"
+import newRon from "./components/heyRon.js"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/heyRon" component={newRon} />
+      </Switch>
+    </Router>
   );
-}
+};
+// const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
-export default App;
+// const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
