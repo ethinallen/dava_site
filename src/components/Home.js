@@ -2,99 +2,68 @@ import React from "react";
 import "./Home.css"
 import Particles from 'react-particles-js';
 
+function dw_getWindowDims() {
+    var doc = document, w = window;
+    var docEl = (doc.compatMode && doc.compatMode === 'CSS1Compat')?
+            doc.documentElement: doc.body;
+
+    var width = docEl.clientWidth;
+    var height = docEl.clientHeight;
+
+    // mobile zoomed in?
+    if ( w.innerWidth && width > w.innerWidth ) {
+        width = w.innerWidth;
+        height = w.innerHeight;
+    }
+
+    return {width: width, height: height};
+}
+
+const topRightStyle = {
+    zIndex: "0",
+    color: "black",
+    textAlign: "right",
+    borderWidth: "0 448px 262px 0",
+    width: "0",
+    height: "0",
+    top: "0",
+    right:"0",
+    position: "absolute",
+    borderStyle: "solid",
+    borderColor: "transparent #2a9d8f transparent transparent ",
+    animation: "3s ease-out 0s 1 slideInFromRight"
+}
+
 export default () => {
   return (
 
+
     <body>
       <Particles
-        id="tsparticles"
-        options={{
-          background: {
-            color: {
-              value: "#264653",
-            },
-          },
-          fpsLimit: 60,
-          interactivity: {
-            detectsOn: "canvas",
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: "bounce",
-              random: false,
-              speed: 150,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 10000,
-              },
-              value: 3000,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              random: true,
-              value: 5,
-            },
-          },
-          detectRetina: true,
-        }}
+        params = {{
+        	    "particles": {
+        	        "number": {
+        	            "value": 100
+        	        },
+        	        "size": {
+        	            "value": 2
+        	        }
+        	    },
+        	    "interactivity": {
+        	        "events": {
+        	            "onhover": {
+        	                "enable": true,
+        	                "mode": "repulse"
+        	            }
+        	        }
+        	    }
+            }}
         />
       <div id="titleContainer">
         <div id="title">DaVA</div>
         <div id ="descriptor">Data Visualization and Analytics</div>
       </div>
       <div id="topRight">
-      <ul>
-        <li>Testing</li>
-      </ul>
       </div>
 
       <div id="middleLeft"></div>
