@@ -87,13 +87,17 @@ export default () => {
           detectRetina: true,
         }}
         />
-      <div id="topRight"></div>
-
-      <div id="middleLeft">
-        <div id="title">
-          Hello
-        </div>
+      <div id="titleContainer">
+        <div id="title">DaVA</div>
+        <div id ="descriptor">Data Visualization and Analytics</div>
       </div>
+      <div id="topRight">
+      <ul>
+        <li>Testing</li>
+      </ul>
+      </div>
+
+      <div id="middleLeft"></div>
 
       <div id="bottomLeft"></div>
 

@@ -16,6 +16,16 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 80%;
+  }
+}
+
 
 #tbox {
   z-index: 1000;
@@ -31,10 +41,31 @@
   background-color: #e9c46a;
 }
 
+#titleContainer {
+  text-align: right;
+  color: black;
+  opacity: 0%;
+  top: 25%;
+  left: 5%;
+  position: absolute;
+  z-index: 10;
+  animation: 2s fadeIn;
+  animation-delay: 3s;
+}
+
 #title {
-  top: 0;
-  left: 0;
+  color: black;
+  position: absolute;
+  font-size: 155px;
+  z-index: 10;
+  size: 155px;
+  top: 25%;
+  left: 5%;
   font-family: 'Alfa Slab One', cursive;
+}
+
+#descriptor {
+
 }
 
 #middleLeft {
@@ -62,11 +93,11 @@
   border-style: solid;
   border-width: 523px 0 0 895px;
   border-color: transparent transparent transparent #e9c46a;
-  /* transition-delay:1s, 2s; */
   animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
 
 #topRight {
+  z-index: 0;
   color: black;
   text-align: right;
   border-width: 0 448px 262px 0;
@@ -78,12 +109,4 @@
   border-style: solid;
   border-color: transparent #2a9d8f transparent transparent ;
   animation: 3s ease-out 0s 1 slideInFromRight;
-}
-
-#titleContainer {
-  color: black;
-  top: 35%;
-  left:5%;
-  position: absolute;
-  z-index: 10;
 }
