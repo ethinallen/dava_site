@@ -26,11 +26,6 @@
   }
 }
 
-footer {
-  height:0;
-  padding: 0;
-}
-
 body {
   position: absolute;
   z-index: -1;
@@ -41,7 +36,7 @@ body {
 p {
   padding-left: 50px;
   padding-right: 50px;
-  position: relative;
+  position: static;
 }
 
 #particleContainer {
@@ -131,28 +126,32 @@ p {
   animation: 3s ease-out 0s 1 slideInFromRight;
 }
 
+#aboutContainer {
+  top: 100vh;
+  position: absolute;
+}
+
 #aboutLeft {
+  z-index: 1;
   left: 0;
   height: 100vh;
   width: 50vw;
-  top: 100vh;
   color: #2a9d8f;
   background-color: #264653;
   opacity: 90%;
-  position: absolute;
   float: left;
 }
 
 #aboutRight {
+  z: 1;
   left: 50vw;
   height: 100vh;
   width: 50vw;
-  top: 100vh;
   opacity: 90%;
   color: #264653;
   background-color: #2a9d8f;
-  position: absolute;
   background-size: contain;
+  float: right;
 }
 
 #sampleText {
