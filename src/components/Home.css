@@ -104,7 +104,7 @@ p {
   z-index: 0;
   bottom:0;
   left:0;
-  /* opacity: 90%; */
+  opacity: 90%;
   position: absolute;
   border-style: solid;
   border-width: 50vh 0 0 50vw;
