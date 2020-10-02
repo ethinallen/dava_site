@@ -38,5 +38,6 @@
   },
   "devDependencies": {
     "terser-brunch": "^4.0.0"
-  }
+  },
+  "homepage": "."
 }
