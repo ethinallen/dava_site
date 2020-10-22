@@ -57,7 +57,6 @@ p {
   background-position: center;
   width: 500px;
   height: 100px;
-  /* opacity: 30%; */
   border-radius: 5pt;
   background-color: #e9c46a;
 }
@@ -138,6 +137,7 @@ p {
 }
 
 #aboutLeft {
+  padding-top: 40px;
   z-index: 1;
   left: 0;
   height: 100vh;
@@ -149,6 +149,7 @@ p {
 }
 
 #aboutRight {
+  padding-top: 40px;
   z: 1;
   left: 50vw;
   height: 100vh;
@@ -189,4 +190,10 @@ p {
 .sampleText {
   font-family: 'Abel', sans-serif;
   font-size: 4vh;
+}
+
+#navContainer {
+  z-index: 100;
+  right: 0;
+  position: absolute;
 }
