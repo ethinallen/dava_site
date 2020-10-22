@@ -26,6 +26,11 @@
   }
 }
 
+@font-face {
+  font-family: 'Abel', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap")
+}
+
 body {
   position: absolute;
   z-index: -1;
@@ -113,20 +118,21 @@ p {
 }
 
 #topRight {
-  z-index: 0;
-  color: black;
-  top: 0;
-  right:0;
-  text-align: right;
-  border-width: 0 30vw 30vh 0;
-  /* opacity: 90%; */
-  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  width: 25vw;
+  height: 7vh;
+  position: fixed;
+  border-radius: 5px;
   border-style: solid;
-  border-color: transparent #2a9d8f transparent transparent ;
-  animation: 3s ease-out 0s 1 slideInFromRight;
+  border-color: #2a9d8f;
+  background-color: #2a9d8f;
+  /* animation: 3s ease-out 0s 1 slideInFromRight; */
 }
 
 #aboutContainer {
+  font-family: 'Abel', sans-serif;
   top: 100vh;
   position: absolute;
 }
@@ -147,13 +153,40 @@ p {
   left: 50vw;
   height: 100vh;
   width: 50vw;
-  /* opacity: 10%; */
   color: #264653;
   background-color: #2a9d8f;
   background-size: contain;
   float: right;
 }
 
-#sampleText {
-  font-size: 5vh;
+#home-nav-options {
+  min-width: 300px;
+  align-items: center;
+  width: 25vw;
+  position: absolute;
+  color: black;
+}
+
+#home-nav-options ul {
+  display: inline;
+  right: 0;
+}
+
+#home-nav-options li {
+  font-size: 20px;
+  display: inline;
+  padding: 10px;
+}
+
+.about {
+  color: #e9c46a;
+  font-size: 6vh;
+  font-family: 'Abel', sans-serif;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.sampleText {
+  font-family: 'Abel', sans-serif;
+  font-size: 4vh;
 }

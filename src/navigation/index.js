@@ -1,8 +1,6 @@
 import React from "react";
 import '../App.css';
 import Home from "../components/Home.js"
-import HeyRon from "../components/heyRon.js"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ReactLoading from 'react-loading';
 // import AuthNavigator from './AuthNavigator';
 // import AppNavigator from './AppNavigator';
@@ -57,7 +55,7 @@ class AuthLoadingScreen extends React.Component {
 
     if (showLoadingSpinner) {
       const Example = ({ type, color }) => (
-      	<ReactLoading type={type} color={color} height={'20%'} width={'20%'} />
+      	<ReactLoading height={'20%'} width={'20%'} />
       );
       return (
         <Example />
@@ -68,13 +66,9 @@ class AuthLoadingScreen extends React.Component {
       );
     } else {
       return (
-        <HeyRon />
+        <Home />
       );
     }
-
-    return (
-      <Home />
-    );
   }
 }
 

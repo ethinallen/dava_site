@@ -3,19 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.24",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "amazon-cognito-identity-js": "^4.4.0",
-    "aws-amplify": "^3.3.3",
+    "amazon-cognito-identity-js": "^4.5.0",
+    "aws-amplify": "^3.3.4",
     "axios": "^0.20.0",
     "particles.js": "^2.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-loading": "^2.0.3",
-    "react-particles-js": "^3.3.0",
+    "react-particles-js": "^3.4.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.4"
   },
   "scripts": {
     "start": "react-scripts start",
