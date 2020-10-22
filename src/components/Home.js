@@ -3,12 +3,12 @@ import "./Home.css";
 import Particles from 'react-particles-js';
 import About from "./About.js";
 
+
 export default () => {
   return (
 
 
     <body>
-
       <div id="particleContainer">
         <Particles
           params = {{

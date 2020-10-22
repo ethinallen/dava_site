@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "amazon-cognito-identity-js": "^4.5.0",
     "aws-amplify": "^3.3.4",
+    "aws-amplify-react": "^4.2.8",
     "axios": "^0.20.0",
     "particles.js": "^2.0.0",
     "react": "^16.14.0",
