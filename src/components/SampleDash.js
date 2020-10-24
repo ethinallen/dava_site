@@ -10,7 +10,7 @@ class SampleDash extends React.Component {
 
         console.log(iwidth);
         return (<div>
-          <iframe title="Sample Dava Dashboard" src="https://snapshot.raintank.io/dashboard/snapshot/TgES0TiEvrPSp8oCecXD9JOAfeCAFibX" width="1500" height="1000" frameborder="0" ></iframe>
+          <iframe src="http://mrsm.io:3000/dashboard-solo/snapshot/JHdlfJ1SKrQw3IgMipWJ0vxmJ39Kbhti?orgId=0&from=1313592922649&to=1395417154825&panelId=2" width="1000" height="1000" frameborder="0"></iframe>
         </div>);
     }
 }
