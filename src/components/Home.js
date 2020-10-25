@@ -10,8 +10,6 @@ export default () => {
 
 
     <body>
-
-    <div id="navContainer">
       <Navbar sticky="top" bg="light" expand="lg">
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,7 +31,6 @@ export default () => {
             </Form>
           </Navbar.Collapse>
         </Navbar>
-      </div>
 
       <div id="particleContainer">
         <Particles
