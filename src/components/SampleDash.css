@@ -1,1 +1,4 @@
-
+#dashboard-container {
+  position: absolute;
+  left: 20vw;
+}

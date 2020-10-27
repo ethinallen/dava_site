@@ -4,7 +4,6 @@ import Particles from 'react-particles-js';
 import About from "./About.js";
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
-
 export default () => {
   return (
 
