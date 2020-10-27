@@ -9,9 +9,11 @@ class SampleDash extends React.Component {
         var iwidth = "1000";
 
         console.log(iwidth);
+
         return (
           <div id="dashboard-container">
-<iframe src="http://mrsm.io:3000/d-solo/RWVhT8tGz/sample-dash?orgId=1&refresh=5s&from=1603804214981&to=1603825814981&panelId=2" width="1000" height="1000" frameborder="0"></iframe>          </div>
+            <iframe src="https://mrsm.io:3000/d-solo/RWVhT8tGz/sample-dash?orgId=1&refresh=5s&from=1603804214981&to=1603825814981&panelId=2" width="500" height="200" frameborder="0"></iframe>
+          </div>
 
         );
     }
