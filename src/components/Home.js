@@ -2,8 +2,7 @@ import React from "react";
 import "./Home.css";
 import Particles from 'react-particles-js';
 import About from "./About.js";
-import Demo from "./Demo.js"
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
+import Team from "./Team.js"
 
 export default () => {
   return (
@@ -41,7 +40,7 @@ export default () => {
       <div id="bottomLeft"></div>
 
       <About />
-      <Demo />
+      <Team />
     </body>
   );
 };

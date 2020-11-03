@@ -1,31 +1,34 @@
 #aboutContainer {
   font-family: 'Abel', sans-serif;
   top: 100vh;
+  width: 100vw;
   position: absolute;
+  display: flex;
+}
+
+.aboutColumn {
+  width: 50vw;
+  float: left;
+  padding-top: 5vh;
+}
+
+.aboutColumn p {
+  padding: 5vh;
+}
+
+.aboutColumn::after {
+  content: "";
+  clear: both;
 }
 
 #aboutLeft {
-  padding-top: 40px;
-  z-index: 1;
-  left: 0;
-  height: 100vh;
-  width: 50vw;
   color: #2a9d8f;
   background-color: #264653;
-  /* opacity: 90%; */
-  float: left;
 }
 
 #aboutRight {
-  padding-top: 40px;
-  z: 1;
-  left: 50vw;
-  height: 100vh;
-  width: 50vw;
   color: #264653;
   background-color: #2a9d8f;
-  background-size: contain;
-  float: right;
 }
 
 .sampleText {

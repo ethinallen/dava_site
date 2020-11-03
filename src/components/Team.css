@@ -1,0 +1,21 @@
+#teamContainer {
+  position: absolute;
+  top: 170vh;
+  width: 100vw;
+  height: 100vh;
+  clear: both;
+}
+
+#teamContainer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.team-column {
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

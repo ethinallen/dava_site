@@ -33,9 +33,10 @@
 
 body {
   position: absolute;
-  z-index: -1;
+  z-index: 10;
   padding: none;
   background-color: #264653;
+  width: 100vw;
 }
 
 p {
@@ -45,9 +46,12 @@ p {
 }
 
 #particleContainer {
+  position: fixed;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 150%;
+  margin: 0;
+  background-color: #264653;
 }
 
 #tbox {
@@ -64,19 +68,20 @@ p {
 #titleContainer {
   text-align: right;
   color: black;
-  /* opacity: 95%; */
+  opacity: 95%;
   width: 30vw;
-  bottom: 30%;
-  left: 10%;
+  bottom: 40%;
+  left: 15%;
   position: absolute;
   z-index: 10;
   animation: 3s fadeIn;
 }
 
 #title {
+  position: absolute;
+  padding: 10px;
   float: right;
   color: black;
-  position: relative;
   font-size: 10vw;
   bottom: 25%;
   left: 5%;
@@ -84,19 +89,19 @@ p {
 }
 
 #descriptor {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 40px;
   float: right;
-  position: relative;
   color: black;
   font-size: 1.3vw;
-  top: -20%;
-  left: 5%;
 }
 
 #middleLeft {
   z-index: 0;
   bottom:0;
   left:0;
-  /* opacity: 90%; */
+  opacity: 90%;
   position: absolute;
   border-style: solid;
   border-width: 100vh 0 0 100vw;
@@ -108,7 +113,7 @@ p {
   z-index: 0;
   bottom:0;
   left:0;
-  /* opacity: 90%; */
+  opacity: 90%;
   position: absolute;
   border-style: solid;
   border-width: 50vh 0 0 50vw;
@@ -122,7 +127,7 @@ p {
   right: 10px;
   width: 25vw;
   height: 7vh;
-  position: fixed;
+  position: absolute;
   border-radius: 5px;
   border-style: solid;
   border-color: #2a9d8f;
@@ -155,11 +160,6 @@ p {
   font-family: 'Abel', sans-serif;
   padding-top: 10px;
   text-align: center;
-}
-
-.sampleText {
-  font-family: 'Abel', sans-serif;
-  font-size: 4vh;
 }
 
 #navContainer {
