@@ -1,0 +1,9 @@
+{
+    "auth": {
+        "davapool": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    }
+}

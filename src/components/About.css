@@ -1,0 +1,37 @@
+#aboutContainer {
+  font-family: 'Abel', sans-serif;
+  top: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+}
+
+.aboutColumn {
+  width: 50vw;
+  float: left;
+  padding-top: 5vh;
+}
+
+.aboutColumn p {
+  padding: 5vh;
+}
+
+.aboutColumn::after {
+  content: "";
+  clear: both;
+}
+
+#aboutLeft {
+  color: #2a9d8f;
+  background-color: #264653;
+}
+
+#aboutRight {
+  color: #264653;
+  background-color: #2a9d8f;
+}
+
+.sampleText {
+  font-family: 'Abel', sans-serif;
+  font-size: 4vh;
+}
