@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif&display=swap');
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#particleContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  background-color: #264653;
+  z-index: -10;
+}
+
+#middleLeft {
+  z-index: -1;
+  bottom:0;
+  left:0;
+  position: absolute;
+  border-style: solid;
+  border-width: 100vh 0 0 100vw;
+  border-color: transparent transparent transparent #e76f51;
+}
+
+#bottomLeft {
+  z-index: 0;
+  bottom:0;
+  left:0;
+  position: absolute;
+  border-style: solid;
+  border-width: 50vh 0 0 50vw;
+  border-color: transparent transparent transparent #e9c46a;
+}
+
+h1 {
+  position: absolute;
+  font-size: 8vh;
+  font-family: 'Noto Serif';
+  top: 40vh;
+  left: 10vw;
+  z-index: 10;
+}
+
+h2 {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-size: 3vh;
+  top: 52vh;
+  left: 10vw;
+}
+
+#title-descriptor {
+  width: 30vw;
+  min-width: 800px;
+  color: black;
+  font-size: 50px;
+  font-family: 'Noto Serif', cursive;
+  z-index: 10;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+#about-container {
+  top: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+}
+
+#mission-statement {
+  opacity: 1;
+}
+
+#mission-statement-bg {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-color: #2a9d8f;
+  opacity: .4;
+  z-index: -1;
+}
+
+#mission-title {
+  padding: 5vh;
+  left: 15vw;
+  color: black;
+  opacity: 1;
+}
+
+#mission-body {
+  padding: 5vw;
+  color: white;
+  top: 10vh;
+}
+
+#about-statement {
+}
+
+#about-title {
+  padding: 5vh;
+
+  top: 5vh;
+  left: 15vw;
+  color: black;
+  opacity: 1;
+}
+
+#about-body {
+  padding: 5vw;
+  color: white;
+  top: 10vh;
+}
+
+.bg_triangle {
+  opacity: .7;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+.title {
+  font-size: 5vw;
+  opacity: 1;
+}
+
+.about-column {
+  width: 50vw;
+  float: left;
+}
+
+.body-element {
+  font-size: 1.3vw;
+  opacity: 1;
+}
+
+.row{
+  display: flex;
+}
