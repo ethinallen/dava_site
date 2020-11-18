@@ -39,12 +39,6 @@ body {
   width: 100vw;
 }
 
-p {
-  padding-left: 50px;
-  padding-right: 50px;
-  position: static;
-}
-
 #particleContainer {
   position: fixed;
   z-index: -1;
@@ -68,13 +62,11 @@ p {
 #titleContainer {
   text-align: right;
   color: black;
-  opacity: 95%;
   width: 30vw;
   bottom: 40%;
   left: 15%;
   position: absolute;
   z-index: 10;
-  animation: 3s fadeIn;
 }
 
 #title {
@@ -101,7 +93,7 @@ p {
   z-index: 0;
   bottom:0;
   left:0;
-  opacity: 90%;
+  /* opacity: 90%; */
   position: absolute;
   border-style: solid;
   border-width: 100vh 0 0 100vw;
@@ -113,7 +105,7 @@ p {
   z-index: 0;
   bottom:0;
   left:0;
-  opacity: 90%;
+  /* opacity: 90%; */
   position: absolute;
   border-style: solid;
   border-width: 50vh 0 0 50vw;
