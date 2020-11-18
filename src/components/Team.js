@@ -24,7 +24,7 @@ const Team = () => (
 
     <div className="team-column">
       <Card>
-        <Image src='https://dava-site-storage.s3.amazonaws.com/big0.png' wrapped ui={false} />
+        <Image src='https://dava-site-storage.s3.amazonaws.com/IMG_20201031_172533.jpg' wrapped ui={false} />
         <Card.Content>
           <Card.Header>Bennett Meares</Card.Header>
           <Card.Meta>
